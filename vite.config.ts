@@ -9,11 +9,10 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  plugins: [react(), mode === "development" && componentTagger()].filter(
+    Boolean
+  ),
+  base: "/mandala-ceylon-travels/", // Set this to match your GitHub repo name
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

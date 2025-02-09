@@ -16,7 +16,7 @@ const tours = [
     description2:
       "Immerse yourself in the island’s vibrant biodiversity and serene countryside.",
     description3: "",
-    image: "/src/images/sunset.png",
+    image: "images/sunset.png",
   },
   {
     title: "Self-Spiritual Tours",
@@ -25,7 +25,7 @@ const tours = [
     description2:
       "Visit ancient temples, participate inmeditation retreats, andexperience traditional healingpractice",
     description3: "",
-    image: "/src/images/spiritual.png",
+    image: "images/spiritual.png",
   },
   {
     title: "Cultural Immersion Experiences",
@@ -34,7 +34,7 @@ const tours = [
     description2:
       "Learn traditional crafts, cooking, andcultural practices directly from thelocal.",
     description3: "",
-    image: "/src/images/cultural.png",
+    image: "images/cultural.png",
   },
   {
     title: "Adventure Expeditions",
@@ -43,7 +43,7 @@ const tours = [
     description2:
       "Discover hidden trails and off-the-beaten-path destinations.",
     description3: "",
-    image: "/src/images/6.png",
+    image: "images/6.png",
   },
   {
     title: "Experiencesin Yoga and Buddhism as a philosophy",
@@ -53,7 +53,7 @@ const tours = [
       "Participatein yoga retreats designed to harmonize mind, body, and soul, often held in serenenatural settings.",
     description3:
       "Explore the intersection of mindfulness and movement, learning techniques that youcan carry forward in your life.",
-    image: "/src/images/2.png",
+    image: "images/2.png",
   },
   {
     title: "Exploration of Sri Lankan Martial Arts – Angampora",
@@ -63,7 +63,7 @@ const tours = [
       "Participate in workshops anddemonstrations that reveal the art’s deepcultural roots and its focus on discipline andharmony.",
     description3:
       "Engage with practitioners who preserve thiscenturies-old tradition and share its stories.",
-    image: "/src/images/martial.png",
+    image: "images/martial.png",
   },
   {
     title: "Ayurveda Treatments and Sathvic Food",
@@ -73,7 +73,7 @@ const tours = [
       "Rejuvenate your body and mind with massages, herbal remedies, and detoxifyingrituals tailored to your needs.",
     description3:
       "Enjoy the benefits of Sathvic food, a diet rooted in balance and purity, crafted usingfresh, local, and organic ingredients to nourish your soul.",
-    image: "/src/images/fruits.png",
+    image: "images/fruits.png",
   },
   {
     title: "Customized Travel Packages",
@@ -82,7 +82,7 @@ const tours = [
     description2:
       "Whether you seek relaxation, adventure, or cultural exploration, we craft itineraries just for you.",
     description3: "",
-    image: "/src/images/custom.png",
+    image: "images/custom.png",
   },
 ];
 
@@ -144,7 +144,7 @@ const Index = () => {
                 hospitality, Sri Lanka invites travellers to embark on journeys
                 that touch the soul and awaken the senses.
                 <img
-                  src="/src/images/1.png"
+                  src="images/1.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -172,7 +172,7 @@ const Index = () => {
                 memories while preserving the beauty and integrity of Sri
                 Lanka’s cultural and natural heritage.
                 <img
-                  src="/src/images/yasinta1.png"
+                  src="images/yasinta1.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -184,7 +184,7 @@ const Index = () => {
                 remarkable time in India. Her experiences in India significantly
                 shaped her approach to wellness and cross-cultural learning.
                 <img
-                  src="/src/images/yasinta2.png"
+                  src="images/yasinta2.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -203,7 +203,7 @@ const Index = () => {
                 perspectives, ensuring they return with a relaxed mind and a
                 renewed outlook, carrying the essence of Sri Lanka with them.
                 <img
-                  src="/src/images/yasinta3.png"
+                  src="images/yasinta3.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -215,7 +215,7 @@ const Index = () => {
                 transformative travel experiences that foster mental wellness,
                 cultural understanding, and personal growth.
                 <img
-                  src="/src/images/about2.png"
+                  src="images/about2.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -235,7 +235,7 @@ const Index = () => {
                 Sri Lanka’s beauty make him an invaluable member of the Mandala
                 Travels team.
                 <img
-                  src="/src/images/about3.png"
+                  src="images/about3.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -250,7 +250,7 @@ const Index = () => {
                 traveler feel at home. Sri Lanka is not just a place to see; it
                 is a destination to feel and to be transformed by.
                 <img
-                  src="/src/images/3.png"
+                  src="images/3.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
@@ -265,7 +265,7 @@ const Index = () => {
                 communities and preserve Sri Lanka’s natural and cultural
                 heritage.
                 <img
-                  src="/src/images/5.png"
+                  src="images/5.png"
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
