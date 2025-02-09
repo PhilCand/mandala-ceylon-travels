@@ -157,8 +157,9 @@ const Index = () => {
             <h2 className="text-4xl font-bold text-charcoal mb-4">
               Introduction
             </h2>
-            <p className="text-xl  text-charcoal/90 max-w-2xl mx-auto">
-              <div style={{ textAlign: "left" }}>
+
+            <div style={{ textAlign: "left" }}>
+              <p className="text-xl  text-charcoal/90 max-w-2xl mx-auto">
                 Mandala – The Universe, is more than a travel company; it is a
                 gateway to self- exploration and an expedition into nature. Sri
                 Lanka, our home base, is not merely a destination to visit but a
@@ -292,8 +293,8 @@ const Index = () => {
                   alt="title"
                   className="mt-16 mb-16 mx-auto"
                 />
-              </div>
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </section>
