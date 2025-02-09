@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const tours = [
   {
@@ -88,13 +90,34 @@ const tours = [
 
 const Index = () => {
   const { toast } = useToast();
+  const form = useRef();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you as soon as possible.",
-    });
+
+    emailjs
+      .sendForm(
+        "service_6p4ijm8",
+        "template_3e2zath",
+        form.current,
+        "TH8VR_LptTWw9Texd"
+      )
+      .then(
+        (result) => {
+          console.log("Email sent:", result.text);
+          toast({
+            title: "Message sent!",
+            description: "We'll get back to you as soon as possible.",
+          });
+        },
+        (error) => {
+          console.error("Error sending email:", error.text);
+          toast({
+            title: "An error happened",
+            description: "You can try contacting us directly.",
+          });
+        }
+      );
   };
 
   return (
@@ -328,12 +351,18 @@ const Index = () => {
             </div>
 
             <form
+              ref={form}
               onSubmit={handleSubmit}
               className="space-y-6 bg-sand/10 p-8 rounded-xl"
             >
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Your name" required />
+                <Input
+                  id="name"
+                  placeholder="Your name"
+                  name="user_name"
+                  required
+                />
               </div>
 
               <div className="space-y-2">
@@ -341,6 +370,7 @@ const Index = () => {
                 <Input
                   id="email"
                   type="email"
+                  name="user_email"
                   placeholder="Your email"
                   required
                 />
@@ -350,6 +380,7 @@ const Index = () => {
                 <Label htmlFor="message">Message</Label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Tell us about your dream vacation in Sri Lanka"
                   className="min-h-[120px]"
                   required
