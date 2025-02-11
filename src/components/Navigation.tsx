@@ -26,7 +26,10 @@ export const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-semibold text-charcoal">
+          <div
+            className="text-2xl font-semibold text-charcoal hover:text-cinnamon transition-colors cursor-pointer"
+            onClick={() => scrollToSection("hero")}
+          >
             Mandala Ceylon Travels
           </div>
           <div className="hidden md:flex space-x-8">
